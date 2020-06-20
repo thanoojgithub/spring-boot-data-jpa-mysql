@@ -121,3 +121,22 @@ Hibernate: select customer0_.id as id1_0_, customer0_.location as location2_0_, 
 Hibernate: select customer0_.id as id1_0_, customer0_.location as location2_0_, customer0_.name as name3_0_ from customer customer0_
 ←[30m2020-06-20 16:09:21,032←[0;39m ←[34mINFO ←[0;39m [←[34mhttp-nio-8080-exec-4←[0;39m] ←[33mcom.springbootmysql.springbootdatajpamysql.resources.CustomerController←[0;39m: getCustomer for 1
 Hibernate: select customer0_.id as id1_0_0_, customer0_.location as location2_0_0_, customer0_.name as name3_0_0_ from customer customer0_ where customer0_.id=?
+
+
+Ctrl C 
+
+←[30m2020-06-20 16:17:13,682←[0;39m ←[34mINFO ←[0;39m [←[34mSpringContextShutdownHook←[0;39m] ←[33morg.springframework.orm.jpa.AbstractEntityManagerFactoryBean←[0;39m: Closing JPA EntityManagerFactory for persistence unit 'default'
+←[30m2020-06-20 16:17:13,684←[0;39m ←[34mINFO ←[0;39m [←[34mSpringContextShutdownHook←[0;39m] ←[33morg.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl←[0;39m: HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Hibernate: drop table if exists customer
+Hibernate: drop table if exists hibernate_sequence
+←[30m2020-06-20 16:17:13,799←[0;39m ←[34mINFO ←[0;39m [←[34mSpringContextShutdownHook←[0;39m] ←[33morg.springframework.scheduling.concurrent.ExecutorConfigurationSupport←[0;39m: Shutting down ExecutorService 'applicationTaskExecutor'
+←[30m2020-06-20 16:17:13,803←[0;39m ←[34mINFO ←[0;39m [←[34mSpringContextShutdownHook←[0;39m] ←[33mcom.zaxxer.hikari.HikariDataSource←[0;39m: HikariPool-1 - Shutdown initiated...
+←[30m2020-06-20 16:17:13,828←[0;39m ←[34mINFO ←[0;39m [←[34mSpringContextShutdownHook←[0;39m] ←[33mcom.zaxxer.hikari.HikariDataSource←[0;39m: HikariPool-1 - Shutdown completed.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  09:20 min
+[INFO] Finished at: 2020-06-20T16:17:14+05:30
+[INFO] ------------------------------------------------------------------------
+Terminate batch job (Y/N)? Y
+PS E:\sourceCode\spring-boot-data-jpa-mysql>
